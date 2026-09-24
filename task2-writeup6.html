@@ -1,1 +1,26 @@
+<h3>题目名称：GET</h3>
+<p>题目来源：Bugku CTF</p >
+<p>题目类别：web</p >
+<p>题目描述：显示代码：$what=$_GET['what'];
+echo $what;
+if($what=='flag')
+echo 'flag{****}';</p >
 
+<h3>解题思路</h3>
+<p>无，马后炮。</p >
+<p>听从deepseek，在地址处添加?what=flag</p >
+
+<h3>详细步骤</h3>
+<ol>
+  <li>地址输入http://160.202.254.160:14691/?what=flag</li>
+  <li>获得flag</li>
+</ol>
+
+<h3>Payload</h3>
+<p>?what=flag</p >
+
+<h3>flag</h3>
+<p>flag{55b8a987379498184ee1dc643e8b4906}</p >
+
+<h3>总结&反思</h3>
+<p>经询问deepseek，本次通过赋值给what，使其满足代码输出要求获得flag。</p>
