@@ -1,32 +1,26 @@
 <h3>题目名称：source</h3>
 <p>题目来源：Bugku CTF</p >
 <p>题目类别：web</p >
-<p>题目描述：显示代码：$what=$_POST['what'];
-                      echo $what;
-                      if($what=='flag')
-                      echo 'flag{****}';</p >
+<p>题目描述：代码：<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--></p><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}--></body></head></html></p >
 
 <h3>解题思路</h3>
 <p>无，马后炮。</p >
-<p>听从deepseek，本体代码要求使用post请求方式，传入一个值为‘flag’的‘what’参数。</p >
+<p>听从deepseek和前人wp，先用base64解码发现flag并不是真的，扫描目录可以发现/.git/目录，扒取目录后发现“flag is here？”的嫌疑语句，提取哈希值，尝试flag。</p >
 
 <h3>详细步骤</h3>
 <ol>
-  <li>f12打开控制台</li>
-  <li>输入fetch(window.location.href, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: 'what=flag'
-}).then(r => r.text()).then(console.log);</li>
-  <li>获得flag</li>
+  <li>pycharm下载git-dumper</li>
+  <li>终端输入git-dumper http://160.202.254.160:12070/.git/ ./source_code</li>
+  <li>进入新建的source_code文件夹，git reflog。</li>
+  <li>找到嫌疑哈希值，还原出flag。</li>
+  <li>尝试直到找到正确flag</li>
 </ol>
 
 <h3>Payload</h3>
-<p>what=flag</p >
+<p>无</p >
 
 <h3>flag</h3>
-<p>flag{86d8e343408a4cf1cc0db547e4203051}</p >
+<p>flag{git_is_good_distributed_version_control_system}</p >
 
 <h3>总结&反思</h3>
-<p>经询问deepseek，本体考察HTTP协议与PHP基础代码审计，并使用了Web前端调试技巧，虽然我还是没有完全掌握，
-但是至少了解代码含义。</p>
+<p>本次更多借鉴前人wp，前人所用为Linux，而我是用pycharm，我将搭建Linux系统。本题考查目录扫描，git操作。解题完成后偶然猜想或许源码里的This is my friend :<!--tig-->tig提示了我们用git。</p>
