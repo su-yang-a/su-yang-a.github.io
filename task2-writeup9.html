@@ -5,22 +5,23 @@
 
 <h3>解题思路</h3>
 <p>无，马后炮。</p >
-<p>听从deepseek和前人wp，先用base64解码发现flag并不是真的，扫描目录可以发现/.git/目录，扒取目录后发现“flag is here？”的嫌疑语句，提取哈希值，尝试flag。</p >
+<p>听从deepseek，“nc”是Linux系统指令，意思是使用nc连接ip是171.80.2.169服务器的16845端口，直接使用。但我没有linux系统，所以需要下载虚拟机。</p >
 
 <h3>详细步骤</h3>
 <ol>
-  <li>pycharm下载git-dumper</li>
-  <li>终端输入git-dumper http://160.202.254.160:12070/.git/ ./source_code</li>
-  <li>进入新建的source_code文件夹，git reflog。</li>
-  <li>找到嫌疑哈希值，还原出flag。</li>
-  <li>尝试直到找到正确flag</li>
+  <li>下载VMware Workstation Pro</li>
+  <li>下载Kali Linux</li>
+  <li>执行nc 171.80.2.169 16845</li>
+  <li>输入Is</li>
+  <li>发现flag文件，输入cat flag。</li>
+  <li>获得flag</li>
 </ol>
 
 <h3>Payload</h3>
-<p>无</p >
+<p>nc 171.80.2.169 16845</p >
 
 <h3>flag</h3>
-<p>flag{git_is_good_distributed_version_control_system}</p >
+<p>flag{9e861196d5a73bcd}</p >
 
 <h3>总结&反思</h3>
-<p>本次更多借鉴前人wp，前人所用为Linux，而我是用pycharm，我将搭建Linux系统。本题考查目录扫描，git操作。解题完成后偶然猜想或许源码里的This is my friend :<!--tig-->tig提示了我们用git。
+<p>本次是我首次运用虚拟机和Linux系统，需要继续学习。</p>
