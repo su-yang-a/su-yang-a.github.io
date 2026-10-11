@@ -2,32 +2,18 @@
 layout: null
 ---
 
-## V1 inline
+V1 inline form:
 
 VA1:<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}--></body></head></html>
 
-## V2 block with comments
+V6 block form, no closing tags:
 
-VA2:
+VA6:
 
-<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}--></body></head></html>
+<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}-->
 
-## V3 nomarkdown
+V7 block form, no comments, no closing tags:
 
-VA3:
+VA7:
 
-{::nomarkdown}
-<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}--></body></head></html>
-{:/nomarkdown}
-
-## V4 div wrapper
-
-VA4:
-
-<div><html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}--></body></head></html></div>
-
-## V5 block without comments
-
-VA5:
-
-<html><head><body><p>Hello,world!<p><p>This is my friend :</body></head></html>
+<html><head><body><p>Hello,world!<p><p>This is my friend :
