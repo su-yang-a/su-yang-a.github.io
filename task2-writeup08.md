@@ -10,8 +10,9 @@ layout: null
 
 题目描述：代码：
 
-<html><head><body><p>Hello,world!<p><p>This is my friend :<!--tig--><!--flag{Zmxhz19ub3RfaGvyzSEHIQ==}-->
-</body></head></html>
+Hello,world!
+
+This is my friend :
 
 ### 解题思路
 
