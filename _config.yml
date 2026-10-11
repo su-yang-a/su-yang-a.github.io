@@ -1,3 +1,5 @@
+markdown: CommonMark
+
 kramdown:
   entity_output: as_input
   smart_quotes: ["apos", "apos", "quot", "quot"]
