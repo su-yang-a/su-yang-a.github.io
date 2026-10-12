@@ -19,7 +19,10 @@ layout: null
 ### 详细步骤
 
 1. f12打开控制台
-2. 输入fetch(window.location.href, { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: 'what=flag' }).then(r => r.text()).then(console.log);
+2. 在控制台里输入这段代码
+
+`fetch(window.location.href, { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: 'what=flag' }).then(r => r.text()).then(console.log);`
+
 3. 获得flag
 
 ### Payload
