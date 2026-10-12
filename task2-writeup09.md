@@ -21,7 +21,7 @@ layout: null
 1. 下载VMware Workstation Pro
 2. 下载Kali Linux
 3. 执行nc 171.80.2.169 16845
-4. 输入Is
+4. 输入ls
 5. 发现flag文件，输入cat flag。
 6. 获得flag
 
