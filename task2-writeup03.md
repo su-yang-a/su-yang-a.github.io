@@ -6,7 +6,7 @@ layout: null
 
 题目来源：Bugku CTF
 
-题目类别：web
+题目类别：Web
 
 题目描述：只有页面显示“flag就在这里，来找找吧。”
 

@@ -6,7 +6,7 @@ layout: null
 
 题目来源：Bugku CTF
 
-题目类别：web
+题目类别：Web
 
 题目描述：显示代码：$what=$_GET['what']; echo $what; if($what=='flag') echo 'flag{\*\*\*\*}';
 

@@ -6,7 +6,7 @@ layout: null
 
 题目来源：Bugku CTF
 
-题目类别：web
+题目类别：Web
 
 题目描述：页面每500ms刷新一次，源代码其中之一包含flag。
 
