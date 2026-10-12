@@ -6,7 +6,7 @@ layout: null
 
 题目来源：Bugku CTF
 
-题目类别：Misc
+题目类别：MISC
 
 题目描述：一个tar.gz压缩包
 
@@ -34,7 +34,7 @@ layout: null
 
 `sudo mkdir -p /mnt/flagimg`
 
-4. 挂载镜像，ro 表示只读，避免改动镜像
+4. 挂载镜像（ro 表示只读，避免改动镜像）
 
 `sudo mount -o loop,ro test/flag /mnt/flagimg`
 
@@ -58,8 +58,4 @@ key{feb81d3834e2423c9903f4755464060b}
 
 ### 总结&反思
 
-本次是我首次做 linux 类的题，学会了用 file 判断文件的真实类型，以及用 mount 把镜像挂载起来看里面的内容。
-
-最大的体会：文件名不代表内容，那个叫 flag 的文件其实是个"装着文件的箱子"。
-
-挂载完要记得卸载；我这次因为有进程占着卸不掉，最后用的是 sudo umount -l（延迟卸载）。
+本次我学会了用 file 判断文件的真实类型，以及用 mount挂载镜像。（挂载完要记得卸载）
