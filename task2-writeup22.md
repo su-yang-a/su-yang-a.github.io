@@ -10,7 +10,7 @@ layout: null
 
 题目描述：flag{}
 
-（附件：[file.txt](wp22-file.txt)）
+（附件：[file-wp22.txt](file-wp22.txt)）
 
 ### 解题思路
 
