@@ -22,15 +22,15 @@ layout: null
 2. 下载Kali Linux
 3. 执行 nc 连接靶机
 
-`nc 171.80.2.169 16845`
+    `nc 171.80.2.169 16845`
 
 4. 列出当前目录下的文件
 
-`ls`
+    `ls`
 
 5. 发现 flag 文件，读取它
 
-`cat flag`
+    `cat flag`
 
 6. 获得flag
 

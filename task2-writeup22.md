@@ -26,13 +26,13 @@ layout: null
 
 2. base64 解码，得到一个图片文件
 
-![截图1](ph-wp22-1.jpg)
+    ![截图1](ph-wp22-1.jpg)
 
 3. 认出图里的符号是猪圈密码（格子边框形状 + 点）
 
 4. 对照猪圈密码表逐个还原字母，得到 thisispigpassword
 
-![截图2](ph-wp22-2.png)
+    ![截图2](ph-wp22-2.png)
 
 5. 获得flag
 

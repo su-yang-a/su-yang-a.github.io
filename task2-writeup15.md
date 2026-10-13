@@ -26,7 +26,7 @@ layout: null
 
 3. 右边 Listing 窗口看反汇编，从 0x40147a 到 0x4014d4 是一串 MOV 指令，每行把一个十六进制数写进栈
 
-<img src="ph-wp15.png" width="1000" alt="Ghidra 里 _main 函数的反汇编列表">
+    <img src="ph-wp15.png" width="1000" alt="Ghidra 里 _main 函数的反汇编列表">
 
 4. 把这一串十六进制按 ASCII 码转成字符
 

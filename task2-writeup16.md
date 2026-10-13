@@ -22,31 +22,31 @@ layout: null
 
 1. 解压压缩包
 
-`tar -xzvf 1.tar.gz`
+    `tar -xzvf 1.tar.gz`
 
 2. 查看那个 flag 文件的真实类型，发现它不是文本，而是一个 ext3 文件系统镜像
 
-`file test/flag`
+    `file test/flag`
 
-![截图1](ph-wp16-1.jpg)
+    ![截图1](ph-wp16-1.jpg)
 
 3. 新建挂载点
 
-`sudo mkdir -p /mnt/flagimg`
+    `sudo mkdir -p /mnt/flagimg`
 
 4. 挂载镜像（ro 表示只读，避免改动镜像）
 
-`sudo mount -o loop,ro test/flag /mnt/flagimg`
+    `sudo mount -o loop,ro test/flag /mnt/flagimg`
 
 5. 查看镜像里的文件，里面有一个 flag.txt
 
-`ls -la /mnt/flagimg`
+    `ls -la /mnt/flagimg`
 
-![截图2](ph-wp16-2.png)
+    ![截图2](ph-wp16-2.png)
 
 6. 读取flag
 
-`cat /mnt/flagimg/flag.txt`
+    `cat /mnt/flagimg/flag.txt`
 
 ### Payload
 
