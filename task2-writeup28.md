@@ -8,8 +8,7 @@ layout: null
 
 题目类别：MISC
 
-题目描述：key格式flag{xxxxxxxxxxxxxxxxxxxxxxxxxxx}
-
+题目描述：
 附件：[file-wp28.pcap](file-wp28.pcap)
 
 ### 解题思路
