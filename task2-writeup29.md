@@ -10,6 +10,8 @@ layout: null
 
 题目描述：flag{}
 
+附件：[file-wp29.docx](file-wp29.docx)
+
 ### 解题思路
 
 无，马后炮。
