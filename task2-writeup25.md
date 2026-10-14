@@ -26,17 +26,15 @@ layout: null
 
 ### 详细步骤
 
-1. 访问靶场，页面只有一串 64 位哈希
+1. 按题目名"备份"扫目录，发现备份文件 index.php.bak
 
-2. 按题目名"备份"扫目录，发现备份文件 index.php.bak
+2. 下载 index.php.bak 读源码，看到 key 过滤和 md5 弱比较两个考点
 
-3. 下载 index.php.bak 读源码，看到 key 过滤和 md5 弱比较两个考点
+3. 把参数名写成 kkeyey1、kkeyey2，绕过 key 过滤
 
-4. 把参数名写成 kkeyey1、kkeyey2，绕过 key 过滤
+4. 传http://160.202.254.160:15908/?kkeyey1=240610708&kkeyey2=QNKCDZO绕过 md5 弱比较
 
-5. 传 240610708 和 QNKCDZO 两个 0e 魔法哈希，绕过 md5 弱比较
-
-6. 获得flag
+5. 获得flag
 
 ### Payload
 
@@ -47,3 +45,5 @@ http://160.202.254.160:15908/?kkeyey1=240610708&kkeyey2=QNKCDZO
 flag{62e932d65c9795755340734a13c45cd2}
 
 ### 总结&反思
+
+本次考察了对备份文件的提取，以及对源码的分析。本题让我又遇到了强弱比较，和md5编码，下次会更加熟悉。
