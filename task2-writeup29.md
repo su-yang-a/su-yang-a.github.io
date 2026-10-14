@@ -8,15 +8,13 @@ layout: null
 
 题目类别：MISC
 
-题目描述：flag{}
+题目描述：
 
-附件：[file-wp29.docx](file-wp29.docx)
+附件：[眼见非实.docx](file-wp29.docx)
 
 ### 解题思路
 
-无，马后炮。
-
-听从deepseek，docx 本质上是个 zip 包，把它解压开就能看到里面的 xml。正文在 word/document.xml 里，用文本编辑器打开一看，有一段文字被 w:vanish 包着——那是 Word 的「隐藏文字」属性，所以在 Word 里看不见，但在 xml 里一眼就能看见。题名「眼见非实」说的就是这个。
+本次有些凑巧想用wps打开docx时提示其为zip文件，发觉其本质上是个 zip 包，把它解压开就能看到里面的 xml。正文在 word/document.xml 里，用文本编辑器打开一看，有一段文字被 w:vanish 包着——那是 Word 的「隐藏文字」属性，所以在 Word 里看不见，但在 xml 里一眼就能看见。题名「眼见非实」说的就是这个。
 
 ### 详细步骤
 
