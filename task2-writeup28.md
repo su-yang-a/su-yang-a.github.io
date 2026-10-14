@@ -9,7 +9,7 @@ layout: null
 题目类别：MISC
 
 题目描述：
-附件：[file-wp28.pcap](file-wp28.pcap)
+附件：[telnet.pcap](file-wp28.pcap)
 
 ### 解题思路
 
@@ -36,3 +36,5 @@ layout: null
 flag{d316759c281bf925d600be698a4973d5}
 
 ### 总结&反思
+
+本次我学到了一个新的文件类型，认识到他是抓包文件，并且获得一查看此类文件的软件。虽然操作原理以及看过，但是还是不够熟悉，需要继续注意。
