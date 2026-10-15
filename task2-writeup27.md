@@ -10,7 +10,7 @@ layout: null
 
 题目描述：
 
-![题目截图](ph-wp27-1.png)
+![题目截图](Bk-ph-wp27.png)
 
 ### 解题思路
 
@@ -30,7 +30,7 @@ layout: null
 
 5. 保存后重新打开，图片下半部分显示出来，底部就是 flag
 
-    ![修好后的图](ph-wp27-2.png)
+    ![修好后的图](Bk-ph-wp27-2.png)
 
 6. 获得flag
 

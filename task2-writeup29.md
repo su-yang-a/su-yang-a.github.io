@@ -10,7 +10,7 @@ layout: null
 
 题目描述：
 
-附件：[眼见非实.docx](file-wp29.docx)
+附件：[眼见非实.docx](Bk-file-wp29.docx)
 
 ### 解题思路
 
@@ -24,7 +24,7 @@ layout: null
 
 3. 找到 w:vanish 那一段，后面 w:t 里的文字就是答案
 
-    ![document.xml 里的隐藏文字](ph-wp29-1.png)
+    ![document.xml 里的隐藏文字](Bk-ph-wp29.png)
 
 4. 获得flag
 ### Payload

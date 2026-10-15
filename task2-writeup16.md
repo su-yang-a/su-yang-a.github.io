@@ -28,7 +28,7 @@ layout: null
 
     `file test/flag`
 
-    ![截图1](ph-wp16-1.jpg)
+    ![截图1](Bk-ph-wp16.jpg)
 
 3. 新建挂载点
 
@@ -42,7 +42,7 @@ layout: null
 
     `ls -la /mnt/flagimg`
 
-    ![截图2](ph-wp16-2.png)
+    ![截图2](Bk-ph-wp16-2.png)
 
 6. 读取flag
 

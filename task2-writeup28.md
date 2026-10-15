@@ -9,7 +9,7 @@ layout: null
 题目类别：MISC
 
 题目描述：
-附件：[telnet.pcap](file-wp28.pcap)
+附件：[telnet.pcap](Bk-file-wp28.pcap)
 
 ### 解题思路
 
