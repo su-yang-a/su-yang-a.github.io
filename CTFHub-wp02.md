@@ -120,7 +120,7 @@ end
 
 7. 响应是一段 JS，里面的 data:image/png;base64, 后面那串就是文件内容被 base64 之后的结果
 
-8. 把响应里那段 base64 解码，解出来的明文就是 flag，获得flag
+8. 把响应那段 base64 解码，获得flag。
 
 ### Payload
 
