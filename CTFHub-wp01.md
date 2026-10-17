@@ -25,9 +25,9 @@ layout: null
 
     ?msg=data://text/plain,Hello Challenge!
 
-3. 第二关：key1 要"intval 得 1337、但本身不是整数"，传 1337a
+3. 第二关：key1 要"intval 得 1337、但本身不是整数"，传 1337
 
-    &key1=1337a
+    &key1=1337（不再是字符串）
 
 4. 第三关：key2 要 42 字节、以数字开头、后面紧跟一个全角＄
 
