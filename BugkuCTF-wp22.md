@@ -45,3 +45,5 @@ layout: null
 flag{thisispigpassword}
 
 ### 总结&反思
+
+这次的密码题可以说是我第一次没有大幅依靠AI辅助来解出的，也第一次见到了base64编码。
