@@ -10,6 +10,10 @@ layout: null
 
 题目描述：Due to the security concerns, we are going to phase out the old LMS system. We have developed a new E-learning system called "yeeclass", please give it a try!
 
+![题目描述](Ch-ph-wp05.png)
+
+附件：[Ch-file-wp05.zip](Ch-file-wp05.zip)
+
 ### 解题思路
 
 这道题是一个课程作业提交系统。flag 由初始化脚本写进数据库：容器启动时创建一个 flagholder 用户，再以它的名义往 1 号作业提交一条内容为 flag 的记录。所以要拿到 flag，就得读到那条提交。
@@ -116,5 +120,3 @@ with ThreadPoolExecutor(10) as ex:
 ctfhub{6d7ac881dc967fe5a0531764}
 
 ### 总结&反思
-
-我不选这种题了，我自己都没看都懂干了什么。
