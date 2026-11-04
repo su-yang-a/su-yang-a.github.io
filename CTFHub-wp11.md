@@ -49,3 +49,5 @@ layout: null
 Flag{6MO3Nbdad7umkHmQ}
 
 ### 总结&反思
+
+这imhex还挺好用，啥东西往里一放就行。看看文件头然后该干什么干什么。
