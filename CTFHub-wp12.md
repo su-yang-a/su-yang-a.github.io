@@ -102,3 +102,5 @@ PD9waHAKZGllKCdubyBubyBubycpOwovL24xYm9va3thZnJfMV9zb2x2ZWR9Cg==
 n1book{afr_1_solved}
 
 ### 总结&反思
+
+又是一道新题，我不是选的简单题吗？怎么老是我没见过的操作。
