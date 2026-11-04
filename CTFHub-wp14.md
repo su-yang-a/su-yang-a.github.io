@@ -89,3 +89,5 @@ git-dumper 'http://challenge-34c39f8af4e9c809.sandbox.ctfhub.com:10800/' gitdump
 n1book{git_looks_s0_easyfun}
 
 ### 总结&反思
+
+AI还是太强大了，我还没消化完。
