@@ -79,3 +79,5 @@ http://challenge-0c786bc2d5e787c7.sandbox.ctfhub.com:10800/img../flag
 n1book{afr_2_solved}
 
 ### 总结&反思
+
+又遇到了一道新题，明明我选的是简单题啊，怎么这些操作我还是没见过啊。
