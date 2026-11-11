@@ -86,3 +86,5 @@ http://challenge-250351896bb4c133.sandbox.ctfhub.com:10800/index.php~
 n1book{info_1s_v3ry_imp0rtant_hack}
 
 ### 总结&反思
+
+看着AI做的好轻松啊，我只能理解原因，无法复现操作。
