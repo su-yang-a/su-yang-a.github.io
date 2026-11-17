@@ -2,9 +2,9 @@
 layout: null
 ---
 
-### 题目名称：（待确认）
+### 题目名称：injection
 
-题目来源：CTFHub
+题目来源：CTFHub（原题：2017-赛客夏令营-Web-injection）
 
 题目类别：Web
 
