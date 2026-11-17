@@ -10,7 +10,7 @@ layout: null
 
 题目描述：
 
-![题目描述](Ch-ph-wp17.png)
+![题目描述](Ch-ph-wp17-1.png)
 
 ### 解题思路
 

@@ -10,7 +10,7 @@ layout: null
 
 题目描述：
 
-![题目截图](Bk-ph-wp27.png)
+![题目截图](Bk-ph-wp27-1.png)
 
 ### 解题思路
 

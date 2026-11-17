@@ -28,7 +28,7 @@ layout: null
 
 2. 用 ImHex 打开，翻到文件末尾。JPEG 的结束标记 FF D9 在 0x0000BC4D，紧接着 0x0000BC4F 就是 50 4B 03 04，也就是 PK 头
 
-    ![文件末尾的 PK 头](Ch-ph-wp18.png)
+    ![文件末尾的 PK 头](Ch-ph-wp18-1.png)
 
 在查找窗口里搜 flag，能看到 0x0000BC6D 处有一段明文
 

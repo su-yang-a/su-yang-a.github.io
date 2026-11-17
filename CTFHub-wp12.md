@@ -18,7 +18,7 @@ layout: null
 
 为了搞清楚代码到底怎么写，先用流过滤器去读主页源码。下面这张图是用 convert.iconv.utf-8.utf-16 读出来的 index 源码，在浏览器地址前加 view-source: 前缀就能直接看。不加前缀的话浏览器会把 `<?php` 当成 HTML 的伪注释，一直吃到文件结尾，整页就变白屏了，这也是为什么直接在地址栏打开这个 payload 什么都看不到。
 
-![用过滤器读出来的 index 源码](Ch-ph-wp12.png)
+![用过滤器读出来的 index 源码](Ch-ph-wp12-1.png)
 
 从源码能确认两件事：一是会自动拼 .php，所以目标写 flag 就行，写 flag.php 反而变成 flag.php.php；二是没有黑名单，p=flag 返回 no no no 其实是 flag.php 自己 die 了。
 

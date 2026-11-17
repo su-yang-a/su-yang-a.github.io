@@ -10,7 +10,7 @@ layout: null
 
 题目描述：
 
-![题目描述](Ch-ph-wp07.png)
+![题目描述](Ch-ph-wp07-1.png)
 
 ![题目描述](Ch-ph-wp07-2.png)
 

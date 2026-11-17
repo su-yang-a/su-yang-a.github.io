@@ -51,7 +51,7 @@ layout: null
 
     访问后浏览器会提示下载一个叫 flag 的文件
 
-    ![下载到的 flag 文件](Ch-ph-wp13.png)
+    ![下载到的 flag 文件](Ch-ph-wp13-1.png)
 
     打开就是 n1book{afr_2_solved}，获得flag
 
