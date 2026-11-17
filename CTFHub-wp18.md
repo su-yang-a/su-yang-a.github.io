@@ -30,11 +30,9 @@ layout: null
 
     ![文件末尾的 PK 头](Ch-ph-wp18.png)
 
-3. 在查找窗口里搜 flag，能看到 0x0000BC6D 处有一段明文
+在查找窗口里搜 flag，能看到 0x0000BC6D 处有一段明文
 
-    ![搜到的 flag](Ch-ph-wp18-2.png)
-
-4. 既然尾部是一个 ZIP，直接用解压软件打开这张 jpg，里面就一个 Flag.txt
+4. 虽然此时可以直接得到，但是其实尾部是一个 ZIP，直接用解压软件打开这张 jpg，里面就一个 Flag.txt
 
     ```
     Flag{NJY7UbLrKFSDZLCY}
@@ -48,20 +46,12 @@ layout: null
 
 ### Payload
 
-直接当 zip 解出来
-
-```powershell
-& 'D:\work\python\python.exe' -c "import zipfile;z=zipfile.ZipFile('goodguys.jpg');print(z.read('Flag.txt').decode())"
-```
-
-反过来，自己做一个同样的图种
-
-```powershell
-copy /b 原图.jpg + 包.zip 结果.jpg
-```
+无
 
 ### flag
 
 Flag{NJY7UbLrKFSDZLCY}
 
 ### 总结&反思
+
+imhex能直接看到我确实没想到
