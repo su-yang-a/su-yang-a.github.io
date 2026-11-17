@@ -39,9 +39,7 @@ layout: null
 
     连起来就是 ALPHALAB
 
-4. 注意最后一组是三个点加一杠，`-...` 是 B；如果看成四个点，`-....` 就成了数字 6
-
-5. 得到 flag{ALPHALAB}，获得flag
+4.  得到 flag{ALPHALAB}，获得flag
 
 ### Payload
 
@@ -52,3 +50,5 @@ layout: null
 flag{ALPHALAB}
 
 ### 总结&反思
+
+根据题目和图像能很轻松看出是摩斯密码
